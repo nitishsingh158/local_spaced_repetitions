@@ -1,30 +1,14 @@
 # Local Flash Cards
 
-Local spaced repetition.
-
-## Setup
-
-```bash
-# Python deps
-uv sync
-
-# Frontend deps
-cd frontend && npm install && cd ..
-```
+Local spaced repetition flashcard app.
 
 ## Run
 
-Open two terminals:
-
 ```bash
-# Terminal 1 — backend
-uv run uvicorn backend.main:app --reload
-
-# Terminal 2 — frontend
-cd frontend && npm run dev
+make dev
 ```
 
-Open http://localhost:5173
+Opens at http://localhost:5173
 
 ## Usage
 
@@ -36,5 +20,5 @@ Open http://localhost:5173
 ## Tests
 
 ```bash
-uv run pytest backend/tests/ -v
+make test
 ```
